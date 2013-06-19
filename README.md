@@ -1,4 +1,4 @@
 laravel4cheatsheet
 ==================
 
-A collection of cheat sheets for Laravel 4
+This is a collection of cheat sheets for Laravel 4.
