@@ -9,5 +9,6 @@ code snippets, class / method / helper names, and commonly used libraries.
 
 
 One Page Basic Cheat Sheet - 
-[Download](https://github.com/jacquesfu/laravel4cheatsheet/blob/master/laravel-4-basic-onepage.pdf?raw=true)
- / [View](https://github.com/jacquesfu/laravel4cheatsheet/blob/master/basic.md)
+[Download PDF](https://github.com/jacquesfu/laravel4cheatsheet/blob/master/laravel-4-basic-onepage.pdf?raw=true)
+ / [View HTML](https://github.com/jacquesfu/laravel4cheatsheet/blob/master/basic.md)
+ / [Raw Source](https://raw.github.com/jacquesfu/laravel4cheatsheet/master/basic.md)
