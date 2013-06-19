@@ -1,6 +1,6 @@
-# Laravel Cheat Sheet
+# Laravel 4 Cheat Sheet
 
-This is a guide on how to setup and use laravel. 
+This is a quick reference for Laravel 4. 
 
 ## Simple Database
 Path: app/config/database.php
