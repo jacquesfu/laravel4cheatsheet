@@ -25,12 +25,14 @@ Path: app/routes.php
 	// route to controller
 	Route::get('user/{id}', 'UserController@showProfile'); 
 
-## Views (Blade)
+## Views (Blade Templates)
 Path: app/*.blade.php
+
+	$view = View::make('users', array('name'=>'John') );
 
 **layout.blade.php**
 
-	<html>
+	<html><h1>Title</h1>
 	@yield('content') - create a content section
 	</html>
 
@@ -38,11 +40,12 @@ Path: app/*.blade.php
 
 	@extends('layout')
 	@section('content')
-	Any HTML goes here
+	Any content that goes here will be use the layout.blade.php template.
 	@stop
 
-**Conditional**
+**Control Flow**
 
+	// conditional
 	@if (count($records) === 1)
 	I have one record!
 	@elseif (count($records) > 1)
@@ -51,8 +54,7 @@ Path: app/*.blade.php
 	I don't have any records!
 	@endif
 
-**Loops**
-
+	// loops
 	@for ($i = 0; $i < 10; $i++)
 	The current value is {{ $i }}
 	@endfor
@@ -78,4 +80,8 @@ Path: app/*.blade.php
 
 ## Models (Eloquent ORM)
 
-TBD
+	class User extends Eloquent {
+	
+    		protected $table = 'my_users';
+
+	}
