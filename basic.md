@@ -81,7 +81,8 @@ Path: app/controllers/*.php
 
 ## Models (Eloquent ORM)
 Path: app/models/*.php
+
 	class User extends Eloquent {
-    		protected $table = 'my_users'; // override default behavior (class = table)
+	    	protected $table = 'my_users'; // override default behavior (class = table)
 		protected $hidden = array('password');   // hide attributes
 	}
