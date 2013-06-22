@@ -68,6 +68,7 @@ Path: app/*.blade.php
 	@endwhile
 
 ## Controllers
+Path: app/controllers/*.php
 
 	class UserController extends BaseController {
 		public function showProfile($id) {
@@ -79,9 +80,8 @@ Path: app/*.blade.php
 	$url = URL::action('FooController@method'); // generate a url to a controller
 
 ## Models (Eloquent ORM)
-
+Path: app/models/*.php
 	class User extends Eloquent {
-	
-    		protected $table = 'my_users';
-
+    		protected $table = 'my_users'; // override default behavior (class = table)
+		protected $hidden = array('password');   // hide attributes
 	}
